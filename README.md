@@ -1,6 +1,10 @@
 # async_polyfill
 es6 async await polyfill
 
+converts function generators into async/await block and returns a Promise
+
+promises should be yielded to syncronize the execution block
+
 # installation
 ```javascript
 npm install --save async_polyfill
@@ -19,10 +23,10 @@ async(function*(){
 // call generator functions with parameters
 var someUrl = "http://example.com/users/1";
 
-var fn = function*(url){
+var getUser = function*(url){
   var user = yield fetch(url);
-  console.log(user);
+  return user;
 }
 
-async(fn)(someUrl);
+async(fn)(someUrl).then(user => console.log(user));
 ```
