@@ -1,0 +1,26 @@
+{
+  "name": "async_polyfill",
+  "version": "1.0.0",
+  "description": "es6 async await polyfill",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kutlugsahin/async_polyfill.git"
+  },
+  "keywords": [
+    "async",
+    "await",
+    "polyfill",
+    "es6",
+    "yield"
+  ],
+  "author": "kutlu sahin <kutlugsahin@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kutlugsahin/async_polyfill/issues"
+  },
+  "homepage": "https://github.com/kutlugsahin/async_polyfill#readme"
+}
