@@ -28,5 +28,5 @@ var getUser = function*(url){
   return user;
 }
 
-async(fn)(someUrl).then(user => console.log(user));
+async(getUser)(someUrl).then(user => console.log(user));
 ```
